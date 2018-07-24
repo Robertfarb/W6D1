@@ -78,7 +78,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("console.log(\"Shippy ship shippy\");\n\n\nconst MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./lib/moving_object.js\"); \nconst canvasEl = document.getElementsByTagName(\"canvas\")[0];\nconst ctx = canvasEl.getContext(\"2d\");\n\nmovingObj = new MovingObject({ pos: [30, 30], vel: [10, 10], radius: 5, color: \"#00FF00\"}); \nconsole.log(movingObj);\nmovingObj.draw(ctx);\n\nwindow.MovingObject = MovingObject; \n\n//# sourceURL=webpack:///./lib/asteroid.js?");
+eval("// console.log(\"Shippy ship shippy\");\n\n\nconst MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./lib/moving_object.js\"); \nconst canvasEl = document.getElementById(\"game-canvas\");\nconsole.log(canvasEl);\nconsole.log(canvasEl.getContext);\nconst ctx = canvasEl.getContext(\"2d\");\n\nmovingObj = new MovingObject({ pos: [30, 30], vel: [10, 10], radius: 5, color: \"#00FF00\"}); \nconsole.log(movingObj);\nmovingObj.draw(ctx);\n\nwindow.MovingObject = MovingObject; \n\n//# sourceURL=webpack:///./lib/asteroid.js?");
 
 /***/ }),
 
